@@ -1,12 +1,13 @@
 //
 // STOP!!! Make sure you're editing the TEMPLATE version of the README, in /src/docs/README_TEMPLATE.adoc
 //
-// Do NOT edit /README_TEMPLATE.adoc as your changes will be overwritten when the template is rendered again during
+// Do NOT edit /README.adoc as your changes will be overwritten when the template is rendered again during
 // `process-sources`.
 //
 // Changes made to this template, must then be rendered to the base readme, by running `mvn process-sources`
 //
-// To render the README directly, run `mvn asciidoc-template::build`
+// To render the README directly, run `mvn asciidoc-template:build -N`
+// (the -N flag is required to avoid running the plugin against child modules, which have no template configured)
 //
 
 
@@ -43,7 +44,16 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-image:https://maven-badges.herokuapp.com/maven-central/io.confluent.parallelconsumer/parallel-consumer-parent/badge.svg?style=flat[link=https://mvnrepository.com/artifact/io.confluent.parallelconsumer/parallel-consumer-parent,Latest Parallel Consumer on Maven Central]
+// image:https://maven-badges.herokuapp.com/maven-central/io.confluent.parallelconsumer/parallel-consumer-parent/badge.svg?style=flat[link=https://mvnrepository.com/artifact/io.confluent.parallelconsumer/parallel-consumer-parent,Latest Parallel Consumer on Maven Central]
+
+[WARNING]
+====
+Please note that this project is no longer maintained.
+
+Similar functionality is available with https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html[Share Consumers] in Apache Kafka
+====
+
+---
 
 // Github actions disabled since codecov
 //image:https://github.com/confluentinc/parallel-consumer/actions/workflows/maven.yml/badge.svg[Java 8 Unit Test GitHub] +
@@ -1271,4 +1281,3 @@ https://www.google.com/url?q=https://www.yourkit.com/.net/profiler/&source=gmail
 :leveloffset: +1
 include::{project_root}/CHANGELOG.adoc[]
 //:leveloffset: -1 - Duplicate key leveloffset (attempted merging values +1 and -1): https://github.com/whelk-io/asciidoc-template-maven-plugin/issues/118
-
