@@ -52,7 +52,7 @@ Please note that this project is no longer maintained.
 
 Similar functionality is available with https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html[Share Consumers] in Apache Kafka.
 
-There is also a active fork of the project maintained by one of the original creators, https://github.com/astubbs[@astubbs]: https://github.com/astubbs/parallel-consumer.
+There is also an active fork of the project maintained by one of the original creators, https://github.com/astubbs[@astubbs]: https://github.com/astubbs/parallel-consumer.
 ====
 
 ---
